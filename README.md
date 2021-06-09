@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: pkgstore/github-actions-sync@main
         with:
-          source: ${{ secrets.SYNC_SOURCE_URL }}
-          target: ${{ secrets.SYNC_TARGET_URL }}
-          username: ${{ secrets.SYNC_USER_NAME }}
-          token: ${{ secrets.SYNC_USER_TOKEN }}
+          source: ${{ secrets.MIRROR_SOURCE_URL }}
+          target: ${{ secrets.MIRROR_TARGET_URL }}
+          username: ${{ secrets.MIRROR_USER_NAME }}
+          token: ${{ secrets.MIRROR_USER_TOKEN }}
 ```
