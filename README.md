@@ -1,6 +1,6 @@
 ## Git Repository Mirror
 
-Universal repository mirroring tool.
+Universal mirroring repository tool.
 
 ### Syntax
 

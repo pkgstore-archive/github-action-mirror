@@ -1,6 +1,6 @@
 name: "Git Repo Mirror"
 author: "Kitsune Solar <kitsune.solar@gmail.com>"
-description: ""
+description: "Universal mirroring repository tool."
 branding:
   icon: "upload-cloud"
   color: "gray-dark"
