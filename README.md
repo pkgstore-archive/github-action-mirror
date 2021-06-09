@@ -27,5 +27,5 @@ jobs:
 
 - `MIRROR_SOURCE_URL` - source repository URL.
 - `MIRROR_TARGET_URL` - target repository URL.
-- `MIRROR_USER_NAME` - user for target repository.
+- `MIRROR_USER_NAME` - user name for target repository.
 - `MIRROR_USER_TOKEN` - user token for target repository.
