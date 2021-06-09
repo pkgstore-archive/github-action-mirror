@@ -2,7 +2,7 @@ FROM alpine
 
 LABEL "repository"="https://github.com/pkgstore/github-actions-sync"
 LABEL "homepage"="http://pkgstore.github.io/"
-LABEL "maintainer"="Kitsune solar <kitsune.solar@gmail.com>"
+LABEL "maintainer"="Kitsune Solar <kitsune.solar@gmail.com>"
 
 ADD *.sh /
 
