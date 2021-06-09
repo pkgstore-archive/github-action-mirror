@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
-bash "/sync.sh $*"
+set -e
 
-exit 0
+sh -c "/sync.sh $*"
