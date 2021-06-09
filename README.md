@@ -7,7 +7,7 @@ on:
   - push
 
 jobs:
-  sync:
+  mirror:
     runs-on: ubuntu-latest
     name: "Mirror"
     steps:
