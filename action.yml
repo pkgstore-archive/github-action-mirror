@@ -5,8 +5,11 @@ branding:
   icon: upload-cloud
   color: gray-dark
 inputs:
-  url:
-    description: "URL"
+  source:
+    description: "Source"
+    required: true
+  target:
+    description: "Target"
     required: true
   username:
     description: "Username"
