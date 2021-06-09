@@ -1,0 +1,25 @@
+name: "GitHub Actions: Sync"
+author: ""
+description: ""
+
+branding:
+  icon: upload-cloud
+  color: gray-dark
+
+inputs:
+  url:
+    description: "URL"
+    required: true
+  username:
+    description: "Username"
+    required: true
+  token:
+    description: "Token"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.username }}
+    - ${{ inputs.token }}
+    - ${{ inputs.url }}
