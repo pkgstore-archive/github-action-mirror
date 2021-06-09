@@ -18,6 +18,7 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
+    - ${{ inputs.source }}
+    - ${{ inputs.target }}
     - ${{ inputs.username }}
     - ${{ inputs.token }}
-    - ${{ inputs.url }}
