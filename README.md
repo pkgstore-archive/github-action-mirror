@@ -1,5 +1,7 @@
 ## Git Repository Mirror
 
+Universal repository mirroring tool.
+
 ### Syntax
 
 ```yml
@@ -20,3 +22,10 @@ jobs:
           username: ${{ secrets.MIRROR_USER_NAME }}
           token: ${{ secrets.MIRROR_USER_TOKEN }}
 ```
+
+GitHub secrets:
+
+- `MIRROR_SOURCE_URL` - source repository URL.
+- `MIRROR_TARGET_URL` - target repository URL.
+- `MIRROR_USER_NAME` - user for target repository.
+- `MIRROR_USER_TOKEN` - user token for target repository.
