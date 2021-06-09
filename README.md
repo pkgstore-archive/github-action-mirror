@@ -1,4 +1,6 @@
-## Information
+## Git Repository Mirror
+
+### Syntax
 
 ```yml
 name: "Git Repo Mirror"
