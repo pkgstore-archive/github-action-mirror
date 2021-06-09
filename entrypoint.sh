@@ -1,5 +1,5 @@
 #!/bin/bash
 
-bash -c "/sync.sh $*"
+bash -c "/mirror.sh $*"
 
 exit 0
