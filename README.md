@@ -1,8 +1,8 @@
-## Git Repository Mirror
+# Git Repository Mirror
 
 Universal mirroring repository tool.
 
-### Syntax
+## Syntax
 
 ```yml
 name: "Git Repo Mirror"
