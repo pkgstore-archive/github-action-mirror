@@ -7,6 +7,6 @@ TOKEN="${4}"
 
 git clone --mirror "${SOURCE}" '/root/git/source' && cd '/root/git/source' || exit
 git remote add 'target' https://"${USERNAME}":"${TOKEN}"@"${TARGET#https://}"
-git push --mirror 'target'
+git push -f --mirror 'target'
 
 exit 0
