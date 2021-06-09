@@ -1,9 +1,9 @@
-name: "GitHub Actions: Mirror"
-author: ""
+name: "GitHub Mirror"
+author: "Kitsune Solar <kitsune.solar@gmail.com>"
 description: ""
 branding:
-  icon: upload-cloud
-  color: gray-dark
+  icon: "upload-cloud"
+  color: "gray-dark"
 inputs:
   source:
     description: "Source"
