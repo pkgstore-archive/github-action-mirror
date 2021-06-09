@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.MIRROR_USER_TOKEN }}
 ```
 
-GitHub secrets:
+**GitHub secrets:**
 
 - `MIRROR_SOURCE_URL` - source repository URL.
 - `MIRROR_TARGET_URL` - target repository URL.
