@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: "Mirror"
     steps:
-      - uses: pkgstore/github-actions-mirror@main
+      - uses: pkgstore/github-action-mirror@main
         with:
           source: ${{ secrets.MIRROR_SOURCE_URL }}
           target: ${{ secrets.MIRROR_TARGET_URL }}
