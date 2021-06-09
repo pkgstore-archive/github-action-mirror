@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: "Mirror"
     steps:
-      - uses: pkgstore/github-actions-sync@main
+      - uses: pkgstore/github-actions-mirror@main
         with:
           source: "https://github.com/${{ github.repository }}"
           target: "${{ secrets.GITLAB_SYNC_URL }}/${{ github.repository }}"
