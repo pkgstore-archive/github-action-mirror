@@ -5,23 +5,31 @@ branding:
   icon: "upload-cloud"
   color: "gray-dark"
 inputs:
-  source:
-    description: "Source"
+  source_repo:
+    description: "Source Repository"
     required: true
-  target:
-    description: "Target"
+  source_user:
+    description: "Source User"
     required: true
-  username:
-    description: "Username"
+  source_token:
+    description: "Source Token"
     required: true
-  token:
-    description: "Token"
+  target_repo:
+    description: "Target Repository"
+    required: true
+  target_user:
+    description: "Target User"
+    required: true
+  target_token:
+    description: "Target Token"
     required: true
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.source }}
-    - ${{ inputs.target }}
-    - ${{ inputs.username }}
-    - ${{ inputs.token }}
+    - ${{ inputs.source_repo }}
+    - ${{ inputs.source_user }}
+    - ${{ inputs.source_token }}
+    - ${{ inputs.target_repo }}
+    - ${{ inputs.target_user }}
+    - ${{ inputs.target_token }}

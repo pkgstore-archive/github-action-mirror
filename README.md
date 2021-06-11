@@ -5,7 +5,7 @@ Universal mirroring repository tool.
 ## Syntax
 
 ```yml
-name: "Git Repo Mirror"
+name: "GitLab Repo Mirror"
 
 on:
   - push
@@ -17,15 +17,17 @@ jobs:
     steps:
       - uses: pkgstore/github-action-mirror@main
         with:
-          source: ${{ secrets.MIRROR_SOURCE_URL }}
-          target: ${{ secrets.MIRROR_TARGET_URL }}
-          username: ${{ secrets.MIRROR_USER_NAME }}
-          token: ${{ secrets.MIRROR_USER_TOKEN }}
+          source_repo: "https://github.com/${{ github.repository }}.git"
+          source_user: "${{ secrets.MIRROR_SOURCE_USER_GITHUB }}"
+          source_token: "${{ secrets.MIRROR_SOURCE_TOKEN_GITHUB }}"
+          target_repo: "https://gitlab.com/${{ github.repository }}.git"
+          target_user: "${{ secrets.MIRROR_TARGET_USER_GITLAB }}"
+          target_token: "${{ secrets.MIRROR_TARGET_TOKEN_GITLAB }}"
 ```
 
-**GitHub secrets:**
-
-- `MIRROR_SOURCE_URL` - source repository URL.
-- `MIRROR_TARGET_URL` - target repository URL.
-- `MIRROR_USER_NAME` - user name for target repository.
-- `MIRROR_USER_TOKEN` - user token for target repository.
+- `source_repo` - source repository URL.
+- `source_user` - source user.
+- `source_token` - source token.
+- `target_repo` - target repository URL.
+- `target_user` - target user.
+- `target_token` - target token.
