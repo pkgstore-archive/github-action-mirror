@@ -2,10 +2,10 @@
 
 Universal mirroring repository tool.
 
-## Syntax
+## Workflow Syntax
 
 ```yml
-name: "GitLab Repo Mirror"
+name: "Repository Mirror: GitLab"
 
 on:
   - push
