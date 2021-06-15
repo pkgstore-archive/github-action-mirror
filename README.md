@@ -4,7 +4,7 @@ Universal mirroring repository tool.
 
 ## Workflow Syntax
 
-### GitHub -> GitLab
+### GitHub > GitLab
 
 ```yml
 name: "Repository Mirror: GitLab"
@@ -27,7 +27,7 @@ jobs:
           target_token: "${{ secrets.MIRROR_TARGET_TOKEN_GITLAB }}"
 ```
 
-### GitHub -> GitHub
+### GitHub > GitHub
 
 ```yml
 name: "Repository Mirror: GitHub"
