@@ -4,6 +4,8 @@ Universal mirroring repository tool.
 
 ## Workflow Syntax
 
+### GitHub -> GitLab
+
 ```yml
 name: "Repository Mirror: GitLab"
 
@@ -25,6 +27,8 @@ jobs:
           target_token: "${{ secrets.MIRROR_TARGET_TOKEN_GITLAB }}"
 ```
 
+### GitHub -> GitHub
+
 ```yml
 name: "Repository Mirror: GitHub"
 
@@ -45,6 +49,8 @@ jobs:
           target_user: "${{ secrets.MIRROR_TARGET_USER_GITHUB }}"
           target_token: "${{ secrets.MIRROR_TARGET_TOKEN_GITHUB }}"
 ```
+
+## Legend
 
 - `source_repo` - source repository URL.
 - `source_user` - source user.
