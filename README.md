@@ -7,7 +7,7 @@ Universal mirroring repository tool.
 ### GitHub > GitLab
 
 ```yml
-name: "Repository Mirror: GitLab"
+name: "Repository Mirror"
 
 on:
   - push
