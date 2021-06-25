@@ -13,7 +13,8 @@ mirror() {
   SOURCE="https://${SOURCE_USER}:${SOURCE_TOKEN}@${SOURCE_REPO#https://}"
   TARGET="https://${TARGET_USER}:${TARGET_TOKEN}@${TARGET_REPO#https://}"
 
-  ${git} clone --mirror "${SOURCE}" '/root/git/source' && cd '/root/git/source' || exit 1
+  ${git} clone --mirror "${SOURCE}" '/root/git/source' \
+    && cd '/root/git/source' || exit 1
   ${git} remote add 'target' "${TARGET}"
   ${git} push -f --mirror 'target'
 }
